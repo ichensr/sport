@@ -1,0 +1,69 @@
+/**
+ * index css
+ *
+ * @author Chensiren
+ *
+ * @since  2018-1-24
+ *
+**/
+.live-main{ width: 100%; min-height: 770px; min-width: 1200px; background: url(../../images/live-main-bg.jpg) repeat 0 center; border-bottom: 1px solid #7b7a82; margin-bottom: 20px;}
+.live-header{ padding: 0 122px; padding-top: 15px; margin-bottom: 30px;}
+.live-team{ width: 370px; height: 70px; position: relative;}
+.live-team.home-live-team{ background: url(../../images/home-team-bg.png) no-repeat 0 0; padding-left: 75px; padding-right: 20px;}
+.live-team.away-live-team{ background: url(../../images/away-team-bg.png) no-repeat 0 0; padding-right: 75px; padding-left: 20px;}
+.live-team .live-team-logo { width: 80px; height: 80px; text-align: center; line-height: 80px; position: absolute; margin-top: -45px;}
+.live-team.home-live-team .live-team-logo{ left: -10px; top: 50%;}
+.live-team.away-live-team .live-team-logo{ right: -10px; top: 50%;}
+.live-team .live-team-name{ font-size: 20px; color: #ffffff; line-height: 70px; max-width: 180px;}
+.live-team .live-team-score{ font-size: 46px; color: #ffffff; width: 90px; text-align: center;}
+.live-info{ width: 216px; text-align: center;}
+.live-info .live-time{ color: #808080;}
+.live-info .live-type{ color: #e02a2a;}
+.live-info .live-vs{ font-size: 24px; font-weight: 700; color: #808080;}
+
+.live-body-left { width: 900px; width: 100%; border-right: 4px;}
+.live-body-left .iframe-box{ height: 500px;}
+.live-body-left .live-share{ height: 60px; line-height: 60px; background: #1f1f1f; padding: 0 10px;}
+.live-body-left .live-share .share{ background: url(../../images/live-share.png) no-repeat 0 center; padding-left: 25px;}
+.live-footer{ margin: 20px 0;}
+.live-footer ul li{ float: left; margin-right: 15px; margin-bottom: 10px;}
+.live-footer ul li a{ color: #ffffff; display: block; height: 30px; line-height: 30px; padding: 0 15px; border-radius: 30px; border: 1px solid #e5e5e5;}
+.live-footer ul li.active a,.live-footer ul li:hover a{
+    border-color: transparent;
+    background-color:#ec625b;
+    background-image:-webkit-gradient(linear, left bottom, right top, color-stop(0.32, #fe5453), color-stop(0.66, #e13d3c), color-stop(0.83, #c12322));
+    background-image:-webkit-linear-gradient(45deg, #fe5453, #e13d3c, #c12322);
+    background-image:-moz-linear-gradient(45deg, #fe5453, #e13d3c, #c12322);
+    background-image: -ms-linear-gradient(45deg, #fe5453 0%, #c12322 100%);
+    background-image: -o-linear-gradient(45deg, #fe5453, #c12322);
+    background-image: linear-gradient(45deg, #fe5453, #c12322);
+}
+.live-body-right{ width: 300px; background: #232222;}
+.chat-title{ height: 36px; line-height: 36px; padding-left: 20px; border-bottom: 2px solid #464646;}
+
+.fan-com{ background: #ffffff; padding: 20px;}
+.fan-header{ margin-bottom: 20px;}
+.fan-header h2{ font-size: 18px; padding-left: 50px; color: #ff5554; position: relative;}
+.icon-fan{ width: 44px; height: 44px; background: url(../../images/icon-fan.png) no-repeat 0 0; position: absolute; left: 0;
+    top: -10px;}
+.fan-nav{ margin-left: 30px;}
+.fan-nav li{ float: left; margin: 0 10px;}
+.fan-nav li a{ padding: 5px 15px; border: 1px solid #e6e6e6; color: #484848;}
+.fan-nav li.active a,.fan-nav li:hover a{ background: #ff5554; color: #ffffff;}
+.fan-list ul li.item{ width: 33.333%; padding: 10px; float: left;}
+.fan-list .fan-item{ border: 1px solid #d6d6d6; padding: 15px 15px; position: relative; overflow: hidden;}
+.fan-list .fan-item .win-rate{ width: 140px; height: 44px; line-height: 44px; color: #ffffff; padding: 0 25px; border-radius: 44px; background: #ec2320; position: absolute; right: -20px; top: 15px;}
+.fan-list .fan-item .fan-info{ padding-bottom: 15px; border-bottom: 1px solid #ececec;}
+.fan-list .fan-item .face-img{ width: 52px; height: 52px; background: #c8c8c8; border-radius: 50px; overflow: hidden;}
+.fan-list .fan-item .face-img img{ min-width: 100%; min-height: 100%;}
+.fan-list .fan-item .fan-name{ padding-left: 10px;}
+.fan-list .fan-item .fan-name p{ color: #303030; margin-bottom: 6px;}
+.fan-list .fan-item .fan-name span{ display: inline-block; height: 20px; line-height: 18px; text-align: center; padding: 0 10px; font-size: 12px; border: 1px solid #ff5554; border-radius: 18px; color: #ff5554; margin-right: 10px;}
+.fan-special{ padding: 10px 0; color: #272727;}
+.fan-group{ background: #f5f5fa; padding: 10px;}
+.fan-group ul li{ margin-bottom: 5px;}
+.fan-group ul li img{ margin-right: 10px;}
+.group-ewm{ width: 40px; height: 40px; overflow: hidden;}
+.group-ewm img{ width: 100%; height: 100%;}
+.fan-list ul li.item .cover-vague{ width: 100%; height: 100%; background: url(../../images/blur-bg.jpg) no-repeat 0 0; position: absolute; left: 0; top: 0; text-align: center;}
+.rec-coop{ background: #3f3f3f; padding:  15px 20px;font-size: 18px; color: #ffffff; display: inline-block; margin-bottom: 10px; margin-top: 75px;}

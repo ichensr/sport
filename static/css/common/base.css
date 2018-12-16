@@ -1,0 +1,335 @@
+/**
+ * base css
+ *
+ * @author Chensiren
+ *
+ * @since  2018-1-24
+ *
+**/
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+} 
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/*css重置样式*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td {margin:0;padding:0;}
+table{border-collapse:collapse;border-spacing:0;}
+fieldset,img{border:0;}
+li{ list-style:none;}
+li{list-style-type:none;}
+body{font-family: "Microsoft YaHei", "黑体", "Helvetica Neue", Helvetica, Arial; color:#1a1a1a;}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{font-weight:300;*font-weight:normal; line-height: normal; color:#1a1a1a;}
+strong{font-weight:bold;}
+b{font-weight:300;*font-weight:normal;}
+i{display:inline-block;*display:inline;zoom:1;}
+ol,ul{list-style:none;}
+ul{ margin-bottom: 0;;}
+img{border:0;vertical-align: middle;-ms-interpolation-mode:bicubic;}
+button,input,select,textarea{font-family:"Helvetica Neue",Helvetica,Arial; outline: none;}
+input:-webkit-autofill{ background-color: white;}
+input:-webkit-autofill{ background-color: white; -webkit-box-shadow: 0 0 0px 1000px white inset;}
+button,label{cursor:pointer;}
+sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}
+sup{top:-0.5em;}sub{bottom:-0.25em;}
+small{font-size:80%;}
+audio,canvas,video{display:inline-block;*display:inline;*zoom:1;}
+audio:not([controls]){display:none;height:0}[hidden]{display:none;}
+abbr[title]{border-bottom:1px dotted;}
+cite,em{font-style:normal;}
+q{quotes:none;}
+q:before,q:after{content:'';content:none;}
+svg:not(:root){overflow:hidden;}
+a:focus{outline:0!important;}
+a:active,a:hover{outline:0;color:#d82222;}
+a{color:#333;text-decoration:none !important;}
+.table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td {
+    display: table-cell;
+    vertical-align: inherit;
+    text-align: center;
+}
+
+/*text-hidden*/
+.text-hidden {
+width:100%;
+display:block;/*内联对象需加*/
+word-break:keep-all;/* 不换行 */
+white-space:nowrap;/* 不换行 */
+overflow:hidden;/* 内容超出宽度时隐藏超出部分的内容 */
+text-overflow:ellipsis;/* 当对象内文本溢出时显示省略标记(...) ；需与overflow:hidden;一起使用。*/
+}
+
+/*清除浮动*/
+.clearfix:after { content: ""; display: block; height: 0; clear: both; visibility: hidden; }
+.clearfix { display: inline-table; }
+*html .clearfix { height: 1%; }
+.clearfix { display: block; }
+*+html .clearfix { min-height: 1%;}
+
+/* table */
+.table {
+  width: 100%;
+  max-width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.table > thead > tr > th,
+.table > tbody > tr > th,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > tbody > tr > td,
+.table > tfoot > tr > td {
+  line-height: 1.42857143;
+  text-align: center;
+  display: table-cell;
+  vertical-align: inherit;
+  vertical-align: middle;
+  padding: 5px 0;  
+}
+.table > thead > tr > th img,
+.table > tbody > tr > th img,
+.table > tfoot > tr > th img,
+.table > thead > tr > td img,
+.table > tbody > tr > td img,
+.table > tfoot > tr > td img{
+  text-align: center;
+  vertical-align: inherit;  
+}
+.table > thead > tr > th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #e5e5e5;
+}
+
+.table > thead:first-child > tr:first-child > th,
+.table > thead:first-child > tr:first-child > td {
+  border-top: 0;
+}
+.table > tbody + tbody {
+  border-top: 2px solid #e5e5e5;
+}
+.table .table {
+  background-color: #ffffff;
+}
+
+.table-bordered {
+  border: 1px solid #e5e5e5;
+}
+.table-bordered > thead > tr > th,
+.table-bordered > tbody > tr > th,
+.table-bordered > tfoot > tr > th,
+.table-bordered > thead > tr > td,
+.table-bordered > tbody > tr > td,
+.table-bordered > tfoot > tr > td {
+  border: 1px solid #e5e5e5;
+}
+.table-bordered > thead > tr > th,
+.table-bordered > thead > tr > td {
+  border-bottom-width: 1px;
+}
+
+.table-hover > tbody > tr:hover {
+  background-color: #f5f5f5;
+}
+table col[class*="col-"] {
+  position: static;
+  float: none;
+  display: table-column;
+}
+table td[class*="col-"],
+table th[class*="col-"] {
+  position: static;
+  float: none;
+  display: table-cell;
+}
+.table > thead > tr > td.active,
+.table > tbody > tr > td.active,
+.table > tfoot > tr > td.active,
+.table > thead > tr > th.active,
+.table > tbody > tr > th.active,
+.table > tfoot > tr > th.active,
+.table > thead > tr.active > td,
+.table > tbody > tr.active > td,
+.table > tfoot > tr.active > td,
+.table > thead > tr.active > th,
+.table > tbody > tr.active > th,
+.table > tfoot > tr.active > th {
+  background-color: #f5f5f5;
+}
+.table-hover > tbody > tr > td.active:hover,
+.table-hover > tbody > tr > th.active:hover,
+.table-hover > tbody > tr.active:hover > td,
+.table-hover > tbody > tr:hover > .active,
+.table-hover > tbody > tr.active:hover > th {
+  background-color: #f5f5f5;
+}
+
+/*去掉苹果按钮默认自带样式*/
+.form-change input,.form-change select{
+    -webkit-appearance:none; /*去除系统默认的样式*/
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);   /* 点击高亮的颜色*/
+}
+input[type="button"], input[type="submit"], input[type="reset"] {
+-webkit-appearance: none;
+}
+input[type="submit"],
+ input[type="reset"],
+ input[type="button"],
+ button {
+ -webkit-appearance: none;
+ }
+/*原子类*/
+.text-blue{
+    color: #4682f7;
+}
+.text-red{
+     color: #f0675e;
+ }
+.text-white{
+    color: #ffffff;
+}
+.text-999{
+    color: #999999;
+}
+.bg-blue{
+    background-color: #4682f7;
+}
+.bg-red{
+    background-color: #f0675e;
+}
+.strong{
+    font-weight: 700;
+}
+.fs12{
+    font-size: 12px;
+}
+.fs14{
+    font-size: 14px;
+}
+.fs16{
+    font-size: 16px;
+}
+.fs18{
+    font-size: 18px;
+}
+.fs20{
+    font-size: 20px;
+}
+/*全局样式*/
+body{
+    min-width: 1200px;
+}
+.content{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.layout-header{
+    width: 100%;
+    height: 70px;
+    background-color: #1a1820;
+}
+.header-content{
+    padding: 10px 0;
+}
+.logo{
+    float: left;
+    width: 140px;
+    height: 50px;
+    background-color: #ff5554;
+}
+.header-nav{
+    float: left;
+}
+.collect-nav{
+    float: right;
+}
+
+.header-nav li,.collect-nav li{
+    float: left;
+    height: 50px;
+    line-height: 50px;
+    margin: 0 25px;
+}
+.header-nav li a,.collect-nav li a{
+    color: #ffffff;
+    font-size: 18px;
+    transition: all 0.2s
+}
+.header-nav li.active a{
+    color: #f0675e;
+}
+.header-nav li a:hover,.collect-nav li a:hover{
+    color: #ff5554;
+}
+.footer{
+    width: 100%;
+    min-width: 120px;
+    background: #ffffff;
+    padding: 30px 20px;
+    margin-top: 50px;
+}
+.footer-in{
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 30px;
+}
+.friend-link{
+    text-align: center;
+    word-break: break-all;
+    text-align: center;
+}
+.friend-link a{
+    display: inline-block;
+    padding: 6px 5px;
+}
+.cover-mask{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transition: opacity .5s;
+    transition: opacity .5s;
+}
+.cover-mask-hover:hover .cover-mask{
+    opacity: .2;
+    filter: alpha(opacity=20);
+    -webkit-transition: opacity .5s;
+    transition: opacity .5s;
+}
+.play-btn-hover:hover .play-btn{
+    background: 0 0\9;
+    filter: progid:dximagetransform.microsoft.alphaimageloader(src="http://imgcache.gtimg.cn/mediastyle/yqq/img/cover_play.png", sizingmethod="crop") alpha(opacity=90);
+    opacity: .9;
+    -webkit-transform: scale(1);
+    -webkit-transition-property: opacity,-webkit-transform;
+    -webkit-transition-duration: .5s;
+    transform: scale(1);
+    transition-property: opacity,transform;
+    transition-duration: .5s;
+    cursor: pointer;
+}
+.play-btn{
+    filter: alpha(opacity=0);
+    opacity: 0;
+    -webkit-transform: scale(.7);
+    -webkit-transition-property: opacity,-webkit-transform;
+    -webkit-transition-duration: .5s;
+    transform: scale(.7);
+    transition-property: opacity,transform;
+    transition-duration: .5s;
+    zoom: 1;
+}

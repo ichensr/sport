@@ -1,0 +1,91 @@
+/**
+ * index css
+ *
+ * @author Chensiren
+ *
+ * @since  2018-1-24
+ *
+**/
+body{ background-color: #f5f5f5;}
+.live-swiper{ width: 100%; height: 160px; background-color: #303047;}
+
+.content-main{ width: 100%; position: relative; min-height: calc(100vh - 230px);}
+.hot-video{ background: #ffffff; margin-bottom: 24px;}
+.hot-video{ padding: 20px 20px;}
+.hot-video-nav{ margin-bottom: 15px;}
+.hot-video-nav h2{ font-size: 16px; padding-left: 24px; margin-right: 15px; position: relative;}
+.hot-video-nav h2:before{ content: ""; width: 20px; height: 20px; border-radius: 50%; background: #409eff; position: absolute; left: -6px; top: 50%; margin-top: -10px;}
+.hot-video-nav ul li{ float: left; padding: 0 12px;}
+
+.live-swiper{ padding-top: 10px;}
+.live-swiper .carousel{padding: 0 30px;}
+.live-swiper .carousel-inner .item{ height: 146px;}
+.live-swiper .carousel-control{ height: 146px; width: 30px; background: #61607e;}
+.live-swiper .carousel-control span{display: block; width: 100%; height: 100%; overflow: hidden;}
+.live-swiper .carousel-control.left span{ background: url(../../images/control-left.png) no-repeat center center;}
+.live-swiper .carousel-control.right span{ background: url(../../images/control-right.png) no-repeat center center;}
+.live-swiper-ul li{ padding: 0 8px; width: 20%; float: left;}
+.live-swiper-ul li .live-item{ display: block; height: 146px; background: #49485f; padding: 10px;}
+.live-swiper-ul li .li-live-title{ margin-bottom: 6px;}
+.live-swiper-ul li .match-name{ color: #ffffff; font-size: 12px;}
+.live-swiper-ul li time{ font-size: 12px; width: 40px; text-align: center;}
+.live-swiper-ul li .team-home ,.live-swiper-ul li .team-away{ margin-bottom: 8px;}
+.live-swiper-ul li .team-home .tea-name,.live-swiper-ul li .team-away .team-name{ color: #ffffff; max-width: 120px;}
+.live-swiper-ul li .team-home .tea-name img,.live-swiper-ul li .team-away .team-name img{ width: 28px; height: 28px; border-radius: 50%; margin-right: 5px;}
+.live-swiper-ul li .team-home .team-score,.live-swiper-ul li .team-away .team-score{ width: 40px; text-align: center; line-height: 28px;}
+.live-swiper-ul li .livehot-video-type{ padding-top: 12px; border-top: 1px solid #828292;}
+.live-state{ color: #4682f7; background: url(../../images/live-state.png) no-repeat left center; padding-left: 20px;}
+.end-state{ color: #d8d8d8; display: inline-block; width: 50%; text-align: center;}
+
+.hot-video-list{ padding-right: 15px; padding-left: 15px; margin-right: auto; margin-left: auto;}
+.hot-video-nav ul li{ border-right: 1px solid #d9d9d9;}
+.hot-video-nav ul li:last-child{ border-right: none 0;}
+.hot-video-nav ul li a{ font-size: 12px;}
+.hot-video-list ul li{ padding: 6px; width: 20%; float: left;}
+.hot-video-list ul li a{ display: block; width: 100%; height: 128px; overflow: hidden; background: #f2f2f2; position: relative;}
+.hot-video-list ul li .play-btn{ position: absolute; left: 50%; top: 50%; margin-left: -15px; margin-top: -15px; width: 30px; height: 30px; background: url(../../images/play-btn.png) no-repeat 0 0;}
+.hot-video-list ul li .trapezoid{ position: absolute; left: 0; top: 0; height: 26px; line-height: 26px; padding: 0 10px; font-size: 10px; color: #ffffff;}
+.hot-video-list ul li p{ margin-top: 10px;}
+
+.main-box-left{ width: 800px;}
+.match-nav{ background-color: #ffffff;}
+.match-nav ul li{ float: left;}
+.match-nav ul li a{ display: block; width: 90px; height: 52px; line-height: 52px; text-align: center;}
+.match-nav ul li.active a,.match-nav ul li a:hover{ background-color: #4682f7; color: #ffffff;}
+.title-data{ background: #eceef1; height: 32px; line-height: 32px; text-align: center;}
+
+.match-box{ background: #ffffff;}
+.match-box .match-list{ padding: 15px 5px; border-bottom: 1px solid #f5f5fa;}
+
+.match-live-btn a{ display: inline-block; width: 76px; height: 30px; line-height: 30px; border-radius: 30px; text-align: center;}
+.match-live-btn .live-btn{ padding-left: 20px; background-color: #4682f7; color: #ffffff; background-image: url(../../images/live-btn.png); background-position: 12px center; background-repeat: no-repeat;}
+.match-live-btn .default-btn{ background-color: #b9b9b9; color: #ffffff; cursor: default;}
+.match-list .match-time, .match-list .match-name, .match-list .match-team, .match-list .match-live-btn, .match-list .match-vs{ padding: 0 10px; height: 32px; line-height: 32px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; height: 100%;}
+.match-list .match-time{ width: 50px;}
+.match-list .match-name{ width: 140px;}
+.match-list .match-team{ width: 180px;}
+.match-list .match-vs{ width: 40px;}
+.match-list .match-live-btn{ width: 100px;}
+.match-list .match-team span{ word-break: keep-all; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+.match-list .match-team.home-team{-webkit-box-pack: end; -ms-flex-pack: end;  justify-content: flex-end;}
+.match-list .match-team.home-team img{ margin-left: 8px;}
+.match-list .match-team.away-team img{ margin-right: 8px;}
+
+.main-box-right{ width: 380px;}
+.group-box{ background: #ffffff; padding: 15px 25px; margin-bottom: 20px;}
+.group-box .title{ font-size: 20px; padding: 24px 0 15px 0; position: relative; border-top: 6px solid #f5f5f5; border-bottom: 1px solid #f5f5f5; margin-bottom: 15px;}
+.group-box .title::before{ content: ""; width: 80px; height: 6px; background: #ea1f11; position: absolute;top: -6px; left: 0;}
+.group-function{ margin-bottom: 30px;}
+.group-function li{ float: left; width: 33.33%;}
+.group-function li a{ display: block; text-align: center;}
+.group-function li a p{ margin-bottom: 10px;}
+.group-wexinma li{ margin-bottom: 50px;}
+.group-wexinma .weixinma-img{ width: 94px; height: 94px; overflow: hidden; margin-right: 20px;}
+.group-wexinma h2{ margin-bottom: 10px; padding-top: 10px;}
+
+.sports-news{ padding: 8px; background: #ffffff;}
+.sports-news .sports-news-header{ padding: 15px 0; border-bottom: 1px solid #f5f5f5;}
+.sports-news .title{ font-size: 18px; height: 26px; line-height: 26px; padding-left: 10px; border-left: 2px solid #3283d3;}
+.news-list-ul{ padding: 15px 0;}
+.news-list-ul li{ margin-bottom: 12px;}
+.news-list-ul li a span{ display: inline-block; width: 44px; height: 24px; line-height: 24px; text-align: center; margin-right: 5px; font-size: 10px; color: #fff;  position: relative;}
